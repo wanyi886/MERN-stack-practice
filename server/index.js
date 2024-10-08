@@ -13,10 +13,6 @@ const app = express();
 
 const PORT =  1075;
 
-// Limitation for x-powered-by and etag headers
-app.set('x-powered-by', false);
-app.set('etag', false);
-
 app.use(express.json()) ;
 app.use(cookieParser());
 app.use(cors({
